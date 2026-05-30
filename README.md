@@ -1,8 +1,8 @@
-\# Crowd Activity Detection and Analysis
+# Crowd Activity Detection and Analysis
 
 
 
-\## Overview
+## Overview
 
 
 
@@ -14,11 +14,11 @@ The project uses YOLO11-based object detection and pose estimation models to ide
 
 
 
-\---
+---
 
 
 
-\## Dashboard Interface
+## Dashboard Interface
 
 
 
@@ -26,19 +26,19 @@ The Streamlit dashboard provides a user-friendly interface for real-time monitor
 
 
 
-!\[Dashboard](assets/dashboard.png)
+![Dashboard](assetsdashboard.png)
 
 
 
-\---
+---
 
 
 
-\## Key Features
+## Key Features
 
 
 
-\### Human Activity Recognition (HAR)
+### Human Activity Recognition (HAR)
 
 
 
@@ -46,17 +46,17 @@ The system identifies and classifies human activities into:
 
 
 
-\* Sitting
+* Sitting
 
-\* Standing
+* Standing
 
-\* Walking
+* Walking
 
-\* Running
+* Running
 
 
 
-\### Crowd Group Detection
+### Crowd Group Detection
 
 
 
@@ -64,85 +64,85 @@ The system detects crowd formations by analyzing:
 
 
 
-\* Spatial proximity
+* Spatial proximity
 
-\* Movement trajectories
+* Movement trajectories
 
-\* Group interactions
+* Group interactions
 
-\* Crowd persistence over time
-
-
-
-\### Multi-Object Tracking
+* Crowd persistence over time
 
 
 
-\* DeepSORT tracking
-
-\* Persistent person IDs
-
-\* Trajectory history
-
-\* Occlusion handling
+### Multi-Object Tracking
 
 
 
-\### Density Heatmap Generation
+* DeepSORT tracking
+
+* Persistent person IDs
+
+* Trajectory history
+
+* Occlusion handling
 
 
 
-\* Real-time crowd density visualization
-
-\* High-density zone detection
-
-\* Crowd movement analysis
+### Density Heatmap Generation
 
 
 
-\### Multiple Input Sources
+* Real-time crowd density visualization
+
+* High-density zone detection
+
+* Crowd movement analysis
 
 
 
-\* Laptop Webcam
-
-\* Iriun Mobile Webcam
-
-\* Uploaded Video Files
+### Multiple Input Sources
 
 
 
-\### Interactive Dashboard
+* Laptop Webcam
+
+* Iriun Mobile Webcam
+
+* Uploaded Video Files
 
 
 
-\* Live monitoring
-
-\* Dual-model visualization
-
-\* Real-time analytics
-
-\* User-friendly interface
+### Interactive Dashboard
 
 
 
-\---
+* Live monitoring
+
+* Dual-model visualization
+
+* Real-time analytics
+
+* User-friendly interface
 
 
 
-\## System Architecture
+---
 
 
 
-!\[Architecture](assets/architecture.png)
+## System Architecture
 
 
 
-\---
+![Architecture](assetsarchitecture.png)
 
 
 
-\## Human Activity Recognition
+---
+
+
+
+## Human Activity Recognition
 
 
 
@@ -154,25 +154,25 @@ Activities are classified using:
 
 
 
-\* Knee-angle analysis
+* Knee-angle analysis
 
-\* Motion speed estimation
+* Motion speed estimation
 
-\* Pose geometry
+* Pose geometry
 
-\* Temporal tracking history
-
-
-
-!\[Activity Detection](assets/activity\_detection.png)
+* Temporal tracking history
 
 
 
-\---
+![Activity Detection](assetsactivity_detection.png)
 
 
 
-\## Pose Estimation
+---
+
+
+
+## Pose Estimation
 
 
 
@@ -180,15 +180,15 @@ The system utilizes YOLO11s-Pose to detect 17 body keypoints for each individual
 
 
 
-!\[Pose Estimation](assets/pose\_estimation.png)
+![Pose Estimation](assetspose_estimation.png)
 
 
 
-\---
+---
 
 
 
-\## Crowd Detection and Density Analysis
+## Crowd Detection and Density Analysis
 
 
 
@@ -196,13 +196,13 @@ Crowd formations are detected using:
 
 
 
-\* Distance-based interaction analysis
+* Distance-based interaction analysis
 
-\* Fréchet trajectory similarity
+* Fréchet trajectory similarity
 
-\* Graph-based clustering
+* Graph-based clustering
 
-\* Depth First Search (DFS)
+* Depth First Search (DFS)
 
 
 
@@ -210,39 +210,39 @@ Dynamic density heatmaps highlight areas with high crowd concentration.
 
 
 
-!\[Crowd Detection](assets/crowd\_heatmap.png)
+![Crowd Detection](assetscrowd_heatmap.png)
 
 
 
-\---
+---
 
 
 
-\## Research Contributions
+## Research Contributions
 
 
 
-\* Real-time Human Activity Recognition
+* Real-time Human Activity Recognition
 
-\* Height-normalized speed estimation
+* Height-normalized speed estimation
 
-\* Knee-angle based posture recognition
+* Knee-angle based posture recognition
 
-\* Fréchet-distance trajectory similarity analysis
+* Fréchet-distance trajectory similarity analysis
 
-\* Graph-based crowd clustering
+* Graph-based crowd clustering
 
-\* Real-time crowd alarm generation
+* Real-time crowd alarm generation
 
-\* Dynamic density heatmap visualization
-
-
-
-\---
+* Dynamic density heatmap visualization
 
 
 
-\## Why YOLO11?
+---
+
+
+
+## Why YOLO11?
 
 
 
@@ -258,19 +258,19 @@ The reduced inference latency of YOLO11 allows efficient deployment in live CCTV
 
 
 
-\### YOLO Model Comparison
+### YOLO Model Comparison
 
 
 
-!\[YOLO11 Comparison](assets/yolo11\_comparison.png)
+![YOLO11 Comparison](assetsyolo11_comparison.png)
 
 
 
-\---
+---
 
 
 
-\## Performance Metrics
+## Performance Metrics
 
 
 
@@ -290,21 +290,21 @@ The reduced inference latency of YOLO11 allows efficient deployment in live CCTV
 
 
 
-\---
+---
 
 
 
-\## Installation
+## Installation
 
 
 
-\### Clone Repository
+### Clone Repository
 
 
 
 ```bash
 
-git clone https://github.com/wSubham/Crowd-Activity-Detection-and-Analysis.git
+git clone https:github.comwSubham/Crowd-Activity-Detection-and-Analysis.git
 
 
 
@@ -314,7 +314,7 @@ cd Crowd-Activity-Detection-and-Analysis
 
 
 
-\### Create Virtual Environment
+### Create Virtual Environment
 
 
 
@@ -332,7 +332,7 @@ Windows:
 
 ```bash
 
-venv\\Scripts\\activate
+venvScriptsactivate
 
 ```
 
@@ -350,7 +350,7 @@ source venv/bin/activate
 
 
 
-\### Install Dependencies
+### Install Dependencies
 
 
 
@@ -362,7 +362,7 @@ pip install -r requirements.txt
 
 
 
-\### Run Application
+### Run Application
 
 
 
@@ -386,11 +386,11 @@ http://localhost:8501
 
 
 
-\---
+---
 
 
 
-\## Project Structure
+## Project Structure
 
 
 
@@ -424,13 +424,13 @@ Crowd-Activity-Detection-and-Analysis
 
 │   ├── dashboard.png
 
-│   ├── activity\_detection.png
+│   ├── activity_detection.png
 
-│   ├── crowd\_heatmap.png
+│   ├── crowd_heatmap.png
 
-│   ├── pose\_estimation.png
+│   ├── pose_estimation.png
 
-│   └── yolo11\_comparison.png
+│   └── yolo11_comparison.png
 
 │
 
@@ -446,103 +446,103 @@ Crowd-Activity-Detection-and-Analysis
 
 
 
-\---
+---
 
 
 
-\## Supported Inputs
+## Supported Inputs
 
 
 
-\* CCTV Video Streams
+* CCTV Video Streams
 
-\* Laptop Webcam
+* Laptop Webcam
 
-\* Iriun Mobile Camera
+* Iriun Mobile Camera
 
-\* Uploaded Video Files
-
-
-
-\---
+* Uploaded Video Files
 
 
 
-\## Future Scope
+---
 
 
 
-\* Violence Detection
-
-\* Fall Detection
-
-\* Weapon Detection
-
-\* Multi-Camera Tracking
-
-\* Person Re-Identification (ReID)
-
-\* Mobile Alert System
-
-\* Cloud Deployment
-
-\* Database Logging and Analytics
+## Future Scope
 
 
 
-\---
+* Violence Detection
+
+* Fall Detection
+
+* Weapon Detection
+
+* Multi-Camera Tracking
+
+* Person Re-Identification (ReID)
+
+* Mobile Alert System
+
+* Cloud Deployment
+
+* Database Logging and Analytics
 
 
 
-\## Project Team
+---
 
 
 
-\* Subham Das
-
-\* Suprakash Maji
-
-\* Sayan Paul
-
-\* Rik Mondal
-
-\* Sourav Nayek
+## Project Team
 
 
 
-\### Academic Supervisor
+* Subham Das
+
+* Suprakash Maji
+
+* Sayan Paul
+
+* Rik Mondal
+
+* Sourav Nayek
 
 
 
-\*\*Dr. Moumita Roy\*\*
+### Academic Supervisor
 
 
 
-\---
+**Dr. Moumita Roy**
 
 
 
-\## Acknowledgements
+---
 
 
 
-\* Ultralytics YOLO11
-
-\* DeepSORT Tracking
-
-\* OpenCV
-
-\* Streamlit
-
-\* NumPy
+## Acknowledgements
 
 
 
-\---
+* Ultralytics YOLO11
+
+* DeepSORT Tracking
+
+* OpenCV
+
+* Streamlit
+
+* NumPy
 
 
 
-\## License
+---
+
+
+
+## License
 
 
 
