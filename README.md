@@ -1,5 +1,36 @@
 # Crowd Activity Detection and Analysis
 
+# Crowd Activity Detection and Analysis
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![YOLO11](https://img.shields.io/badge/YOLO11-Ultralytics-green)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer_Vision-red)
+![DeepSORT](https://img.shields.io/badge/DeepSORT-Tracking-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-ff4b4b)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Dashboard Interface](#dashboard-interface)
+- [Key Features](#key-features)
+- [System Architecture](#system-architecture)
+- [Workflow](#workflow)
+- [Human Activity Recognition](#human-activity-recognition)
+- [Pose Estimation](#pose-estimation)
+- [Crowd Detection and Density Analysis](#crowd-detection-and-density-analysis)
+- [Research Contributions](#research-contributions)
+- [Why YOLO11?](#why-yolo11)
+- [Performance Metrics](#performance-metrics)
+- [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Supported Inputs](#supported-inputs)
+- [Future Scope](#future-scope)
+- [Project Team](#project-team)
+- [License](#license)
+
+---
+
 ## Overview
 
 Crowd Activity Detection and Analysis is a real-time computer vision system designed for intelligent crowd monitoring and surveillance. The system combines Human Activity Recognition (HAR), Crowd Group Detection, Multi-Object Tracking, and Density Heatmap Generation to analyze crowd behavior in live video streams and recorded videos.
@@ -67,6 +98,44 @@ The system detects crowd formations by analyzing:
 ## System Architecture
 
 ![Architecture](assets/architecture.png)
+
+---
+
+## Workflow
+
+The complete workflow of the proposed system is shown below:
+
+```text
+Video Input (Webcam / CCTV / Uploaded Video)
+                │
+                ▼
+        YOLO11 Person Detection
+                │
+                ▼
+       YOLO11 Pose Estimation
+      (17 Human Keypoints)
+                │
+                ▼
+     Human Activity Recognition
+   (Sit / Stand / Walk / Run)
+                │
+                ▼
+         DeepSORT Tracking
+                │
+                ▼
+      Crowd Group Detection
+     (Fréchet Distance + DFS)
+                │
+                ▼
+       Density Heatmap Generation
+                │
+                ▼
+      Streamlit Dashboard Output
+```
+
+The system first detects all individuals using YOLO11. Human poses are extracted through the YOLO11s-Pose model, which generates 17 body keypoints for each detected person. These keypoints are analyzed to classify activities such as sitting, standing, walking, and running.
+
+The detected individuals are then tracked using DeepSORT to maintain consistent identities across frames. Crowd groups are identified using trajectory similarity analysis based on Fréchet Distance and graph-based DFS clustering. Finally, a density heatmap is generated and visualized through the Streamlit dashboard.
 
 ---
 
